@@ -20,15 +20,13 @@ const convert = (fileData) => {
     flag = false;
     let entry = "";
     for (let j = 0; j < row.length; j++) {
-      //  abc, "a4v,uy", oi
       const element = row[j];
       if (element == delimiter && !flag) {
         data[headers[count]].push(entry.trim());
         entry = "";
         count++;
         continue;
-      }
-      if (element == '"') {
+      } else if (element == '"') {
         flag = !flag;
         continue;
       }

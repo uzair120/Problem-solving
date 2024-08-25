@@ -1,0 +1,35 @@
+.\" Manpage for ccwc
+.\" Contact uzair.raza20@outlook.com to correct errors or typos.
+.TH ccwc 1 "August 2024" "1.0" "User Commands"
+.SH NAME
+ccwc \- Custom word count utility
+.SH SYNOPSIS
+\fBccwc\fP [options] [file...]
+.SH DESCRIPTION
+A custom word count utility written in Python. It counts lines, words, characters, and bytes in files.
+.SH OPTIONS
+.TP
+\fB-c\fP
+Count bytes.
+.TP
+\fB-l\fP
+Count lines.
+.TP
+\fB-w\fP
+Count words.
+.TP
+\fB-m\fP
+Count characters.
+.SH EXAMPLES
+.TP
+To count words in a file:
+.sp
+\fBccwc\fP \fB-w\fP file.txt
+.TP
+To count characters in a file:
+.sp
+\fBccwc\fP \fB-m\fP file.txt
+.SH AUTHOR
+Your Name.
+.SH SEE ALSO
+wc(1)
